@@ -373,8 +373,8 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 
-    // Stats counter animation
-    const statsNumbers = document.querySelectorAll('.stat-number');
+    // Stats counter animation (both hero and about sections)
+    const statsNumbers = document.querySelectorAll('.stat-number, .hero-stat .stat-number');
     const statsObserver = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {

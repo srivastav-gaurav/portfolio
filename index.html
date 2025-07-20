@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaurav Srivastava - Python & DevOps Engineer</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Gaurav Srivastava - Python Developer & DevOps Engineer</title>
+    <meta name="description" content="Python Developer & DevOps Engineer with 3+ years of experience building scalable genomics platforms at BaseSolve Informatics">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <h2>Gaurav Srivastava</h2>
+                <a href="#home">Gaurav Srivastava</a>
             </div>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
                     <a href="#home" class="nav-link">Home</a>
                 </li>
@@ -26,16 +29,16 @@
                     <a href="#experience" class="nav-link">Experience</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#skills" class="nav-link">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
                 </li>
                 <li class="nav-item">
                     <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
-            <div class="nav-toggle">
+            <div class="nav-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -44,140 +47,190 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero" id="home">
         <div class="hero-container">
             <div class="hero-content">
+                <div class="hero-text">
                 <h1 class="hero-title">
-                    Hi, I'm <span class="highlight">Gaurav Srivastava</span>
+                        Hi, I'm <span class="gradient-text">Gaurav Srivastava</span>
                 </h1>
-                <p class="hero-subtitle">Python Developer & DevOps Engineer</p>
+                    <h2 class="hero-subtitle">Python Developer & DevOps Engineer</h2>
                 <p class="hero-description">
                     Building scalable genomics platforms and automating mission-critical healthcare infrastructure at BaseSolve Informatics
                 </p>
+                    
+                    <!-- Stats -->
                 <div class="hero-stats">
-                    <div class="hero-stat">
-                        <span class="stat-number">3+</span>
-                        <span class="stat-label">Years Experience</span>
+                        <div class="stat-item">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-label">Patients Served Daily</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Labs Supported</div>
                     </div>
-                    <div class="hero-stat">
-                        <span class="stat-number">1K+</span>
-                        <span class="stat-label">Patients Served Daily</span>
+                        <div class="stat-item">
+                            <div class="stat-number">70%</div>
+                            <div class="stat-label">Deployment Overhead Reduction</div>
                     </div>
-                    <div class="hero-stat">
-                        <span class="stat-number">10+</span>
-                        <span class="stat-label">Labs Supported</span>
                     </div>
-                    <div class="hero-stat">
-                        <span class="stat-number">70%</span>
-                        <span class="stat-label">Deployment Overhead Reduced</span>
+
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="assets/resume.pdf" target="_blank" class="btn btn-secondary">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
                     </div>
                 </div>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">
-                        <i class="fas fa-eye"></i> View Latest Projects
-                    </a>
-                    <a href="#" class="btn btn-secondary" id="resumeBtn">
-                        <i class="fas fa-download"></i> Download Resume
-                    </a>
-                    <a href="https://www.linkedin.com/in/mech-srivastava-gaurav/" class="btn btn-outline" target="_blank">
-                        <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <img src="assets/image.jpg" alt="Gaurav Srivastava" class="profile-img">
+                        <div class="profile-overlay">
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/mech-srivastava-gaurav/" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/srivastav-gaurav" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="mailto:gauravsri.1995@gmail.com">
+                                    <i class="fas fa-envelope"></i>
                     </a>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="profile-image-container">
-                    <img src="assets/image.jpg" alt="Gaurav Srivastava - Python & DevOps Engineer" class="profile-image">
+                    </div>
                 </div>
             </div>
         </div>
+        
+        <!-- Scroll Indicator -->
         <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
+            <div class="scroll-text">Scroll to explore</div>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section class="about" id="about">
         <div class="container">
+            <div class="section-header">
             <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Software Developer turned DevOps Engineer</p>
+            </div>
+            
             <div class="about-content">
                 <div class="about-text">
-                    <p>
-                        Software Developer turned DevOps Engineer with 3+ years at BaseSolve Informatics, a leading genomics technology company. I've evolved from architecting core API systems for AUGMET's precision genomics suite to optimizing CI/CD pipelines and infrastructure automation.
+                    <p class="about-description">
+                        Software Developer turned DevOps Engineer with 3+ years at BaseSolve Informatics. 
+                        I've architected core API systems and automation for AUGMET, a precision genomics suite 
+                        trusted by leading institutions.
                     </p>
-                    <p>
-                        My journey showcases a unique blend of hands-on development experience and DevOps expertise, having led projects that directly impact clinical diagnostics workflows for major healthcare institutions including Dartmouth-Hitchcock Medical Center and NCGM.
+                    <p class="about-description">
+                        Known for blending hands-on development with infrastructure automation, I specialize in 
+                        eliminating operational bottlenecks and improving clinical outcomes through innovative 
+                        technical solutions.
                     </p>
-                    <div class="professional-highlights">
-                        <h4>Professional Highlights</h4>
-                        <ul>
-                            <li>Led development of mission-critical genomics platforms</li>
-                            <li>Transitioned successfully from development to DevOps role</li>
-                            <li>Expertise in healthcare technology and precision medicine</li>
-                            <li>Strong track record of scalability and automation</li>
-                        </ul>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h4>Full-Stack Development</h4>
+                                <p>Python, Flask, MongoDB, API design</p>
                     </div>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number">3+</span>
-                            <span class="stat-label">Years Experience</span>
                         </div>
-                        <div class="stat">
-                            <span class="stat-number">10+</span>
-                            <span class="stat-label">Labs Served</span>
+                        <div class="highlight-item">
+                            <i class="fas fa-cloud"></i>
+                            <div>
+                                <h4>Cloud Infrastructure</h4>
+                                <p>AWS, CloudFormation, CI/CD pipelines</p>
+                            </div>
                         </div>
-                        <div class="stat">
-                            <span class="stat-number">1K+</span>
-                            <span class="stat-label">Users Supported</span>
+                        <div class="highlight-item">
+                            <i class="fas fa-cogs"></i>
+                            <div>
+                                <h4>DevOps Automation</h4>
+                                <p>GitHub Actions, monitoring, orchestration</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                
                 <div class="about-image">
-                    <div class="profile-image-container">
-                        <img src="assets/image.jpg" alt="Gaurav Srivastava" class="profile-image">
+                    <div class="tech-stack">
+                        <div class="tech-item">Python</div>
+                        <div class="tech-item">AWS</div>
+                        <div class="tech-item">Docker</div>
+                        <div class="tech-item">MongoDB</div>
+                        <div class="tech-item">Flask</div>
+                        <div class="tech-item">CI/CD</div>
+                        <div class="tech-item">CloudFormation</div>
+                        <div class="tech-item">Git</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Timeline Section -->
-    <section id="experience" class="experience">
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
         <div class="container">
+            <div class="section-header">
             <h2 class="section-title">Experience Timeline</h2>
+                <p class="section-subtitle">My professional journey at BaseSolve Informatics</p>
+            </div>
+            
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-date">Mar 2023 – Present</div>
+                    <div class="timeline-marker"></div>
                     <div class="timeline-content">
+                        <div class="timeline-header">
                         <h3>DevOps Engineer</h3>
-                        <h4>BaseSolve Informatics</h4>
-                        <ul>
-                            <li>Automated CI/CD in GitHub Actions & CodePipeline</li>
-                            <li>Wrote CloudFormation templates & monitoring dashboards</li>
-                            <li>Delivered 60% faster deployments & 50% quicker incident response</li>
+                            <span class="timeline-period">Mar 2023 – Present</span>
+                        </div>
+                        <div class="timeline-company">BaseSolve Informatics</div>
+                        <ul class="timeline-achievements">
+                            <li>Automated CI/CD workflows using GitHub Actions and AWS CodePipeline</li>
+                            <li>Authored CloudFormation templates for reproducible, rapid infrastructure</li>
+                            <li>Delivered observability with CloudWatch and OpenTelemetry, halving incident response times</li>
+                            <li>Enabled frictionless microservices deployments and rapid environment provisioning</li>
                         </ul>
-                        <div class="timeline-tags">
-                            <span class="tag">GitHub Actions</span>
-                            <span class="tag">AWS CodePipeline</span>
-                            <span class="tag">CloudFormation</span>
-                            <span class="tag">Monitoring</span>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">GitHub Actions</span>
+                            <span class="tech-tag">CloudFormation</span>
+                            <span class="tech-tag">OpenTelemetry</span>
                         </div>
                     </div>
                 </div>
+                
                 <div class="timeline-item">
-                    <div class="timeline-date">Oct 2021 – Mar 2023</div>
+                    <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3>Python Developer</h3>
-                        <h4>BaseSolve Informatics</h4>
-                        <ul>
-                            <li>Built internal API platform for AUGMET</li>
-                            <li>Created CLI tool serving 10+ labs & 1K+ users</li>
-                            <li>Developed task orchestration & image-processing engines</li>
+                        <div class="timeline-header">
+                            <h3>Python Developer (SDE2)</h3>
+                            <span class="timeline-period">Oct 2021 – Mar 2023</span>
+                        </div>
+                        <div class="timeline-company">BaseSolve Informatics</div>
+                        <ul class="timeline-achievements">
+                            <li>Developed the internal API platform for AUGMET, driving 40% faster variant analysis</li>
+                            <li>Architected a robust CLI tool, now serving 10+ labs and thousands of users</li>
+                            <li><strong>Built a distributed workflow orchestration engine eliminating all manual intervention</strong></li>
+                            <li>Built modular healthcare data gateways, native LIMS, and advanced digital pathology image engines</li>
+                            <li>Automated regular releases and deployments, cutting operational toil</li>
                         </ul>
-                        <div class="timeline-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Flask</span>
-                            <span class="tag">MongoDB</span>
-                            <span class="tag">CLI Development</span>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">CLI Development</span>
                         </div>
                     </div>
                 </div>
@@ -186,46 +239,67 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section class="skills" id="skills">
         <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+            </div>
+            
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming & Data</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Python</span>
-                        <span class="skill-item">SQL</span>
-                        <span class="skill-item">MongoDB</span>
-                        <span class="skill-item">Bash</span>
-                        <span class="skill-item">C++</span>
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programming & Data</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">SQL</div>
+                        <div class="skill-item">MongoDB</div>
+                        <div class="skill-item">Bash</div>
+                        <div class="skill-item">C++</div>
                     </div>
                 </div>
+                
                 <div class="skill-category">
-                    <h3><i class="fas fa-cloud"></i> Cloud & Infrastructure</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">AWS EC2</span>
-                        <span class="skill-item">AWS S3</span>
-                        <span class="skill-item">AWS Lambda</span>
-                        <span class="skill-item">AWS IAM</span>
-                        <span class="skill-item">CloudFormation</span>
+                    <div class="category-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud & Infrastructure</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">AWS (EC2, S3, Lambda, IAM)</div>
+                        <div class="skill-item">CloudFormation</div>
+                        <div class="skill-item">CloudWatch</div>
+                        <div class="skill-item">Docker</div>
+                        <div class="skill-item">Singularity</div>
                     </div>
                 </div>
+                
                 <div class="skill-category">
-                    <h3><i class="fas fa-cogs"></i> DevOps & Automation</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">GitHub Actions</span>
-                        <span class="skill-item">AWS CodePipeline</span>
-                        <span class="skill-item">Infrastructure as Code</span>
-                        <span class="skill-item">CI/CD</span>
+                    <div class="category-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>DevOps & Automation</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">CI/CD</div>
+                        <div class="skill-item">GitHub Actions</div>
+                        <div class="skill-item">AWS CodePipeline</div>
+                        <div class="skill-item">OpenTelemetry</div>
+                        <div class="skill-item">Infrastructure as Code</div>
                     </div>
                 </div>
+                
                 <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Tools & Frameworks</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Flask</span>
-                        <span class="skill-item">Docker</span>
-                        <span class="skill-item">Singularity</span>
-                        <span class="skill-item">OpenTelemetry</span>
+                    <div class="category-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Tools & Frameworks</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">Flask</div>
+                        <div class="skill-item">Git</div>
+                        <div class="skill-item">Scrum</div>
+                        <div class="skill-item">Project Management</div>
+                        <div class="skill-item">Monitoring & Alerting</div>
                     </div>
                 </div>
             </div>
@@ -233,134 +307,159 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section class="projects" id="projects">
         <div class="container">
-            <h2 class="section-title">Projects Showcase</h2>
-            <div class="project-filter">
-                <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="api">API Platforms</button>
-                <button class="filter-btn" data-filter="devops">DevOps</button>
-                <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Key projects that showcase my expertise</p>
             </div>
+            
             <div class="projects-grid">
-                <div class="project-card" data-category="api healthcare">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-server"></i>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-dna"></i>
                         </div>
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <button class="project-link modal-trigger" data-project="augmet-api">
-                                    <i class="fas fa-eye"></i>
-                                </button>
+                        <h3>Clinical Bioinformatics Platform for AUGMET</h3>
+                        <span class="project-role">Lead Developer</span>
                             </div>
-                        </div>
+                    <p class="project-description">
+                        Enabled secure genomic data analysis and lab management for clinical partners, 
+                        increasing throughput by 40%. Built with Python, Flask, and AWS infrastructure.
+                    </p>
+                    <div class="project-features">
+                        <span class="feature-tag">40% throughput increase</span>
+                        <span class="feature-tag">Secure genomic analysis</span>
+                        <span class="feature-tag">Lab management</span>
                     </div>
-                    <div class="project-content">
-                        <h3>API Platform for AUGMET</h3>
-                        <p>Flask microservices with MongoDB aggregation on AWS infrastructure. Scaled variant analysis by 40%.</p>
-                        <div class="project-tags">
-                            <span class="tag">Flask</span>
-                            <span class="tag">MongoDB</span>
-                            <span class="tag">AWS</span>
-                        </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">MongoDB</span>
                     </div>
                 </div>
 
-                <div class="project-card" data-category="devops api">
-                    <div class="project-image">
-                        <div class="image-placeholder">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
                             <i class="fas fa-terminal"></i>
                         </div>
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <button class="project-link modal-trigger" data-project="augmet-cli">
-                                    <i class="fas fa-eye"></i>
-                                </button>
+                        <h3>AUGMET Laboratory CLI Tool</h3>
+                        <span class="project-role">Architect</span>
                             </div>
-                        </div>
+                    <p class="project-description">
+                        Delivered 7-module CLI tool supporting 10+ labs and 1,000+ daily patients. 
+                        Comprehensive command-line interface for laboratory operations and workflow management.
+                    </p>
+                    <div class="project-features">
+                        <span class="feature-tag">10+ labs supported</span>
+                        <span class="feature-tag">1000+ daily patients</span>
+                        <span class="feature-tag">7 modules</span>
                     </div>
-                    <div class="project-content">
-                        <h3>AUGMET CLI Tool</h3>
-                        <p>Python CLI with 7 modules serving 10+ labs and 1K+ users. Built with Click and Docker.</p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Click</span>
-                            <span class="tag">Docker</span>
-                            <span class="tag">CI/CD</span>
-                        </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">CLI</span>
+                        <span class="tech-tag">API Integration</span>
                     </div>
                 </div>
 
-                <div class="project-card" data-category="devops">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-tasks"></i>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-project-diagram"></i>
                         </div>
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <button class="project-link modal-trigger" data-project="task-management">
-                                    <i class="fas fa-eye"></i>
-                                </button>
+                        <h3>Distributed Orchestration Engine</h3>
+                        <span class="project-role">Creator</span>
                             </div>
-                        </div>
+                    <p class="project-description">
+                        Automated all genomics and pathology workflows with complete removal of manual intervention. 
+                        Features seamless HPC and AWS integration, real-time cost analytics, and advanced scheduling.
+                    </p>
+                    <div class="project-features">
+                        <span class="feature-tag">Zero manual intervention</span>
+                        <span class="feature-tag">HPC integration</span>
+                        <span class="feature-tag">Real-time analytics</span>
                     </div>
-                    <div class="project-content">
-                        <h3>Task Management System</h3>
-                        <p>Distributed API & Worker with AWS Lambda and SQS. Cost-optimized scheduling cut manual steps by 60%.</p>
-                        <div class="project-tags">
-                            <span class="tag">AWS Lambda</span>
-                            <span class="tag">SQS</span>
-                            <span class="tag">Python</span>
-                        </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">HPC</span>
+                        <span class="tech-tag">Orchestration</span>
                     </div>
                 </div>
 
-                <div class="project-card" data-category="api healthcare">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-heartbeat"></i>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-database"></i>
                         </div>
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <button class="project-link modal-trigger" data-project="api-gateway">
-                                    <i class="fas fa-eye"></i>
-                                </button>
+                        <h3>Healthcare Data Gateway & Native LIMS</h3>
+                        <span class="project-role">Developer</span>
                             </div>
-                        </div>
+                    <p class="project-description">
+                        Integrated LIS/LIMS systems with real-time HL7 reporting and hierarchical patient/sample management. 
+                        Streamlined healthcare data flow and laboratory operations.
+                    </p>
+                    <div class="project-features">
+                        <span class="feature-tag">HL7 reporting</span>
+                        <span class="feature-tag">LIMS integration</span>
+                        <span class="feature-tag">Patient management</span>
                     </div>
-                    <div class="project-content">
-                        <h3>API Gateway for Healthcare</h3>
-                        <p>Modular Flask backends with JWT authentication and AI Chatbot integration. Accelerated user onboarding.</p>
-                        <div class="project-tags">
-                            <span class="tag">Flask</span>
-                            <span class="tag">JWT</span>
-                            <span class="tag">AI Integration</span>
-                        </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">HL7</span>
+                        <span class="tech-tag">LIMS</span>
+                        <span class="tech-tag">Data Integration</span>
                     </div>
                 </div>
 
-                <div class="project-card" data-category="healthcare">
-                    <div class="project-image">
-                        <div class="image-placeholder">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
                             <i class="fas fa-microscope"></i>
                         </div>
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <button class="project-link modal-trigger" data-project="image-engine">
-                                    <i class="fas fa-eye"></i>
-                                </button>
-                            </div>
-                        </div>
+                        <h3>Digital Pathology Pipeline</h3>
+                        <span class="project-role">Developer</span>
                     </div>
-                    <div class="project-content">
-                        <h3>Medical Image Engine</h3>
-                        <p>Python-based image processing with OpenSlide and Deep Zoom for browser visualization. Improved diagnostic throughput.</p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">OpenSlide</span>
-                            <span class="tag">Deep Zoom</span>
+                    <p class="project-description">
+                        Enabled high-resolution web review of histopathology slides. 
+                        Built image processing pipeline for digital pathology with web-based viewing capabilities.
+                    </p>
+                    <div class="project-features">
+                        <span class="feature-tag">High-res imaging</span>
+                        <span class="feature-tag">Web review</span>
+                        <span class="feature-tag">Pathology workflow</span>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Image Processing</span>
+                        <span class="tech-tag">Web Technologies</span>
+                    </div>
+                            </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-rocket"></i>
                         </div>
+                        <h3>CI/CD Platform Automation</h3>
+                        <span class="project-role">DevOps Engineer</span>
+                    </div>
+                    <p class="project-description">
+                        Drove 60% reduction in manual deployments through comprehensive CI/CD automation. 
+                        Implemented GitHub Actions workflows and AWS CodePipeline for seamless deployments.
+                    </p>
+                    <div class="project-features">
+                        <span class="feature-tag">60% reduction in manual work</span>
+                        <span class="feature-tag">Automated deployments</span>
+                        <span class="feature-tag">Pipeline optimization</span>
+                        </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">GitHub Actions</span>
+                        <span class="tech-tag">AWS CodePipeline</span>
+                        <span class="tech-tag">CloudFormation</span>
+                        <span class="tech-tag">Docker</span>
                     </div>
                 </div>
             </div>
@@ -368,60 +467,83 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section class="contact" id="contact">
         <div class="container">
-            <h2 class="section-title">Contact & Download</h2>
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Ready to discuss your next project or opportunity</p>
+            </div>
+            
             <div class="contact-content">
-                <div class="contact-text">
-                    <p>
-                        I'm always interested in new opportunities and exciting projects in DevOps and Python development. 
-                        Whether you have a question or want to discuss potential collaborations, feel free to reach out!
-                    </p>
                     <div class="contact-info">
                         <div class="contact-item">
+                        <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
-                            <span>gauravsri.1995@gmail.com</span>
                         </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:gauravsri.1995@gmail.com">gauravsri.1995@gmail.com</a>
+                        </div>
+                    </div>
+                    
                         <div class="contact-item">
+                        <div class="contact-icon">
                             <i class="fas fa-phone"></i>
-                            <span>+91 73554 63962</span>
                         </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+917355463962">+91 73554 63962</a>
+                        </div>
+                    </div>
+                    
                         <div class="contact-item">
+                        <div class="contact-icon">
                             <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
                             <span>Bengaluru, Karnataka, India</span>
                         </div>
                     </div>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/mech-srivastava-gaurav/" class="social-link" title="LinkedIn" target="_blank">
+                    
+                    <div class="social-links-contact">
+                        <a href="https://www.linkedin.com/in/mech-srivastava-gaurav/" target="_blank" class="social-link">
                             <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
                         </a>
-                        <a href="https://github.com/srivastav-gaurav" class="social-link" title="GitHub" target="_blank">
+                        <a href="https://github.com/srivastav-gaurav" target="_blank" class="social-link">
                             <i class="fab fa-github"></i>
-                        </a>
-                        <a href="#" class="social-link resume-download" title="Download Resume">
-                            <i class="fas fa-file-pdf"></i>
+                            <span>GitHub</span>
                         </a>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form id="contactForm" action="https://formspree.io/f/mqaleary" method="POST">
+                
+                <form class="contact-form" id="contact-form">
                         <div class="form-group">
+                        <label for="name">Name</label>
                             <input type="text" id="name" name="name" required>
-                            <label for="name">Your Name</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
                         </div>
+                    
                         <div class="form-group">
-                            <input type="email" id="email" name="_replyto" required>
-                            <label for="email">Your Email</label>
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
                         </div>
+                    
                         <div class="form-group">
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                            <label for="message">Your Message</label>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
                         </div>
-                        <!-- Hidden fields for better email handling -->
-                        <input type="hidden" name="_subject" value="New Contact Form Message from Portfolio">
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
                     </form>
-                </div>
             </div>
         </div>
     </section>
@@ -429,19 +551,18 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
             <p>&copy; 2024 Gaurav Srivastava. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Project Modals -->
-    <div id="projectModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div id="modalBody">
-                <!-- Modal content will be inserted here -->
+                    <p>Built with passion for technology and innovation</p>
+                </div>
+                <div class="footer-links">
+                    <a href="assets/resume.pdf" target="_blank">Download CV</a>
+                    <a href="#home">Back to Top</a>
+                </div>
             </div>
         </div>
-    </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

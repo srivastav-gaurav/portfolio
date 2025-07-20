@@ -111,24 +111,22 @@ git push -u origin main
 2. Form name: `Portfolio Contact Form`
 3. Copy the form endpoint URL
 
-#### **Step 7: Update Form Endpoint**
-1. In `index.html`, line 374, update:
-   ```html
-   <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-   ```
-2. Replace `YOUR_FORM_ID` with your actual Formspree form ID
-
-#### **Step 8: Configure Formspree Settings**
-1. **Notification Email**: `gauravsri.1995@gmail.com`
-2. **Spam Protection**: Enable
-3. **Redirect URL**: `https://yourusername.github.io/portfolio/thank-you.html`
-
-#### **Step 9: Deploy Updated Form**
-```bash
-git add index.html
-git commit -m "Update contact form with working Formspree endpoint"
-git push
+#### **Step 7: Form Already Configured!**
+✅ **Your contact form is already set up with the correct Formspree endpoint:**
+```html
+<form id="contactForm" action="https://formspree.io/f/mqaleary" method="POST">
 ```
+
+✅ **No changes needed** - your form will work immediately when deployed!
+
+#### **Step 8: Formspree Settings (Optional)**
+If you want to customize your form settings:
+1. **Notification Email**: `gauravsri.1995@gmail.com`
+2. **Spam Protection**: Enable (recommended)
+3. **Redirect URL**: `https://srivastav-gaurav.github.io/portfolio/thank-you.html`
+
+#### **Step 9: Ready to Deploy!**
+Your contact form is pre-configured and ready to work. No additional setup needed!
 
 ---
 

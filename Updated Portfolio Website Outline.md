@@ -9,14 +9,14 @@
 "Building scalable genomics platforms and automating mission-critical healthcare infrastructure at BaseSolve Informatics"
 
 **Stats:**  
-- 3+ years of experience  
+- 4+ years of experience  
 - 1000+ patients served daily  
 - 10+ laboratories supported  
 - 70% reduction in deployment overhead  
 
 ## About Me
 
-Software Developer turned DevOps Engineer with 3+ years at BaseSolve Informatics. Architected core API systems and automation for AUGMET, a precision genomics suite trusted by leading institutions. Known for blending hands-on development with infrastructure automation, eliminating operational bottlenecks and improving clinical outcomes.
+Software Developer turned DevOps Engineer with 4+ years at BaseSolve Informatics. Architected core API systems and automation for AUGMET, a precision genomics suite trusted by leading institutions. Known for blending hands-on development with infrastructure automation, eliminating operational bottlenecks and improving clinical outcomes.
 
 ## Skills
 

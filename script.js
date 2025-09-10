@@ -174,7 +174,7 @@ function initializeContactForm() {
             // Simulate form submission (replace with actual form handling)
             setTimeout(() => {
                 // Show success message
-                showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
+                showNotification('Message couldn\'t be sent. Please reach out to be through LinkedIn.', 'success');
                 
                 // Reset form
                 contactForm.reset();
@@ -517,8 +517,8 @@ document.addEventListener('click', function(e) {
         trackEvent('contact', 'Phone', 'Click');
     } else if (href && href.includes('linkedin.com')) {
         trackEvent('social', 'LinkedIn', 'Click');
-    } else if (href && href.includes('github.com')) {
-        trackEvent('social', 'GitHub', 'Click');
+    // } else if (href && href.includes('github.com')) {
+    //     trackEvent('social', 'GitHub', 'Click');
     }
 });
 
